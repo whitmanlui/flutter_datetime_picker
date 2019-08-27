@@ -402,10 +402,10 @@ class TimePickerModel extends CommonPickerModel {
     return ":";
   }
 
-  @override
+  /* @override
   String rightDivider() {
     return ":";
-  }
+  } */
 
   @override
   DateTime finalTime() {
@@ -415,6 +415,12 @@ class TimePickerModel extends CommonPickerModel {
         : DateTime(currentTime.year, currentTime.month, currentTime.day,
             _currentLeftIndex, _currentMiddleIndex, _currentRightIndex);
   }
+
+  @override
+  String rightDivider() => "";
+
+  @override
+  List<int> layoutProportions() => [100, 100, 1];
 }
 
 //a date&time picker model
