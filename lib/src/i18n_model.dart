@@ -143,7 +143,7 @@ final _i18nModel = {
   'zh': {
     //Chinese
     'cancel': '取消',
-    'done': '确定',
+    'done': '確定',
     'today': '今天',
     'monthShort': [
       '一月',
